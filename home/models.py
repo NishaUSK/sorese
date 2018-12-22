@@ -3,15 +3,32 @@ from django.db import models
 from django.utils import timezone
 
 
-class Description(models.Model):
-    descrption_title = models.CharField(max_length=200)
-    descrption_text = models.TextField()
-    # published_date = models.DateTimeField(blank=True, null=True)
-
-
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+class Heropage(models.Model):
+    herotitle = models.CharField(max_length=200)
+    herotext = models.TextField()
+    button = models.URLField('/')
 
     def __str__(self):
-        return self.descrption_title
+        return self.herotitle
+
+
+class Process(models.Model):
+    image = models.ImageField(upload_to='', null=True, blank=True)
+    processtext = models.TextField()
+
+
+class Gyanpage(models.Model):
+    gyantitle = models.CharField(max_length=200)
+    gyantext = models.TextField()
+    button = models.URLField('/')
+
+    def __str__(self):
+        return self.gyantitle
+
+
+class Footerpage(models.Model):
+    footertitle = models.CharField(max_length=200)
+    footertext = models.TextField()
+
+    def __str__(self):
+        return self.footertitle

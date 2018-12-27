@@ -1,4 +1,5 @@
 {% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -22,125 +23,21 @@
   <body>
 
     <header>
-      <!--<nav class="container navbar navbar-expand-md navbar-dark  bg-dark">-->
-        <nav class="navbar navbar-expand navbar-warning">
 
-        <a class="navbar-brand text-dark" href=""><b>SORESE</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-      </div>
-          <!-- <ul class="navbar-nav ml-auto"> -->
-          <form class="form-inline mt-2 mt-md-0">
-            <a class="navbar-brand text-dark" href="">Sign in</a>
-            <a class="navbar-brand text-dark" href="">Sign Up</a>
-          </form>
-      </nav>
+      {% include 'includes/header.html' %}
+
     </header>
 
-    <main role="main">
-      <div class="jumbotron jumbotron-fluid text-center">
-          <!-- <div class="col-md-4"> -->
-          <h1 class=""><b>SOCIETY REQUEST RESPONSE BOARD</b></h1>
-          <h5>    We are living a world of never ending request<br>
-                and response cycle. And our society is not<br>
-                 an exception  </h5>
-            <!-- <p class="lead "><a class="" href=""><span class="badge badge-pill badge-dark">RAISE A REQUEST</span></a></p> -->
-            <!-- <input type="text" placeholder="RAISE A REQUEST" class="button"> -->
-             <button type="button" class="btn btn-dark">RAISE A REQUEST</button>
-          </div>
+    <!-- <main role="main"> -->
 
-        <div class="jumbotron jumbotron-fluid bg-light">
-          <div class="container1">
-            	<div class="row">
-                <div class="col-md-2"><img src="image/write2.png" class="img-fluid" alt="">
-                  <p></p>
-                  <a class="text-dark" href="#">Raise a Request</a>
-                </div>
-                <div class="col-md-2"><img src="image/arrow.png" class="img-fluid" alt=""></div>
-                <div class="col-md-2"><img src="image/solution1.png" class="img-fluid" alt="">
-                  <p></p>
-                  <a class="text-dark" href="#">Get Solution</a>
-                </div>
-                <div class="col-md-2"><img src="image/arrow.png" class="img-fluid" alt=""></div>
-                <div class="col-md-2"><img src="image/smile1.png" class="img-fluid" alt="">
-                  <p></p>
-                  <a class="text-dark" href="#">Stay Happy</a>
-                </div>
-            	</div>
-              </div>
-                <h4><p class="text-center">It works as simple as that!</p></h4>
-          </div>
+    {% include 'includes/jumbotron1.html' %}
 
-      <div class="jumbotron jumbotron-fluid text-center">
-        <!-- <div class="col-md-4"> -->
-          <h1><b>Ah! Get Some Gyan</b></h1>
-        <h5>  Well we all know what to do and<br>
-          What not to do. But never know sometime a tips works.<br> </h5>
-          <!-- <p class="lead "><a class="" href=""><span class="badge badge-pill badge-light">Email address
-            <span class="badge badge-pill badge-light">Subscribe</span> </span></a></p> -->
+    {% include 'includes/jumbotron2.html' %}
 
-<div class="button-section">
-  <!-- <button type="button" class="btn btn-default">Email address <span class="badge badge-pill badge-light">Subscribe</span></button> -->
-  <input type="text" placeholder="Email address" class="input">
-  <input type="button" value="Subscribe"class="btn close-btn">
+    {% include 'includes/jumbotron3.html' %}
 
-  </div>
-</div>
-                      <!-- FOOTER -->
-        <!-- <div class="container"> -->
-
-<footer class="pt-4 my-md-5 pt-md-5 border-top footer-container">
- <div class="container">
-   <div class="row">
-     <!-- <div class="col-12 col-md"> -->
-       <div class="col-4 col-md footer-text">
-
-       <!-- <img class="mb-2" src="/static/image/fp_logo.png" alt="" width="" height=""> -->
-       <h6 class="footer-text">SORESE</h6>
-       <small class="d-block mb-3 footer-text">2018. All right reserved.</small>
-       <div class="row no-gutters">
-         <div class="col-md-3 col-sm-3 col-xs-3">
-           <a href="" target="_blank">
-             <i class="fa fa-facebook fa-2x"></i>
-           </a>
-         </div>
-         <div class="col-md-3 col-sm-3 col-xs-3">
-           <a href="" target="_blank">
-             <i class="fa fa-twitter fa-2x"></i>
-           </a>
-         </div>
-         <div class="col-md-3 col-sm-3 col-xs-3">
-           <a href="" target="_blank">
-             <i class="fa fa-linkedin fa-2x"></i>
-           </a>
-         </div>
-       </div>
-     </div>
-
-     <div class="col-4 col-md footer-text">
-       <h5>RESOURCES</h5>
-       <ul class="list-unstyled text-small">
-         <li><a class="footer-text" href="">Knowledge center</a></li>
-         <li><a class="footer-text" href="">Community info</a></li>
-         <li><a class="footer-text" href="">Available supports</a></li>
-         <li><a class="footer-text" href="">Association details</a></li>
-       </ul>
-     </div>
-     <div class="col-4 col-md footer-text">
-       <h5>ABOUT</h5>
-       <ul class="list-unstyled text-small">
-         <li><a class="footer-text" href="about.html">Team</a></li>
-         <li><a class="footer-text" href="contact.html">Locations</a></li>
-         <li><a class="footer-text" href="career.html">Privacy</a></li>
-         <li><a class="footer-text" href="blog.html">Terms</a></li>
-       </ul>
-     </div>
-   </div>
- </div>
-</footer>
+      <!-- FOOTER -->
+    {% include 'includes/footer.html' %}
     <!-- Footer Links -->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

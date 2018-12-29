@@ -13,7 +13,7 @@ class Heropage(models.Model):
 
 
 class Process(models.Model):
-    image = models.ImageField(upload_to='jumbotron2.html', null=True, blank=True)
+    image = models.ImageField(upload_to='', null=True, blank=True)
     processtext = models.TextField()
 
 

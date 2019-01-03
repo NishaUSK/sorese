@@ -3,9 +3,17 @@
 
 <div class="jumbotron jumbotron-fluid text-center">
   <!-- <div class="col-md-4"> -->
-    <h1><b>Ah! Get Some Gyan</b></h1>
+    <!-- <h1><b>Ah! Get Some Gyan</b></h1>
   <h5>  Well we all know what to do and<br>
-    What not to do. But never know sometime a tips works.<br> </h5>
+    What not to do. But never know sometime a tips works.<br> </h5> -->
+    <!-- {{ gyanpages }} -->
+    {% for gyanpage in gyanpages %}
+    <div>
+        <!-- <p>published: {{ post.published_date }}</p> -->
+        <h2><a href="">{{ Gyanpage.gyantitle }}</a></h2>
+        <p>{{ Gyanpage.gyantext }}</p>
+    </div>
+    {% endfor %}
     <!-- <p class="lead "><a class="" href=""><span class="badge badge-pill badge-light">Email address
       <span class="badge badge-pill badge-light">Subscribe</span> </span></a></p> -->
 

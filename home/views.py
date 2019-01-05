@@ -15,12 +15,12 @@ def header(request):
     return render(request, 'home/header.html', {})
 
 def jumbotron1(request):
-    heropages = Heropage.objects.filter(herotitle=timezone.now())
+    heropages = Heropage.objects.get(herotitle="sample title")
     return render(request, 'home/jumbotron1.html', {'heropages': heropages})
 
 def jumbotron2(request):
     return render(request, 'home/jumbotron2.html', {})
 
 def jumbotron3(request):
-    gyanpages = Gyanpage.objects.filter(gyantitle='timezone.now()')
+    gyanpages = Gyanpage.objects.get(gyantitle='Share the knowledge')
     return render(request, 'home/jumbotron3.html', {'gyanpages': gyanpages})

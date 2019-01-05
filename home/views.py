@@ -3,7 +3,7 @@ from django.utils import timezone
 from .models import Process
 from .models import Heropage
 from .models import Gyanpage
-
+from .models import Footerpage
 
 def base(request):
     return render(request, 'home/base.html', {})
